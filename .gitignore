@@ -1,9 +1,8 @@
 node_modules
-datasources.json
-datasources-local.json
-datasources-stg.json
-datasources-prd.json
+output/comparisons/*
+output/schemas/*
+output/*.log
+comparison-configs/*.json
 local.js
-node_modules
 npm-debug.log
 .vscode

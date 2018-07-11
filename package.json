@@ -4,11 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "generate-source-schema": "node get-source-schema.js",
+    "diff-schemas": "node diff-schemas.js",
+    "start": "node diff-schemas.js"
   },
   "dependencies": {
+    "Console": "^1.1.0",
     "config": "^1.30.0",
     "eslint": "^5.1.0",
+    "fs": "^0.0.1-security",
     "knex": "^0.15.0",
     "linq": "^3.1.0",
     "mongodb": "^3.1.1",

@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+Console@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/Console/-/Console-1.1.0.tgz#5ff6a6df3a6da03ce91dd03a0fe5a3bbd3cd6a42"
+
 acorn-jsx@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-4.1.1.tgz#e8e41e48ea2fe0c896740610ab6a4ffd8add225e"
@@ -624,6 +628,10 @@ fragment-cache@^0.2.1:
 fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
+
+fs@^0.0.1-security:
+  version "0.0.1-security"
+  resolved "https://registry.yarnpkg.com/fs/-/fs-0.0.1-security.tgz#8a7bd37186b6dddf3813f23858b57ecaaf5e41d4"
 
 function-bind@^1.1.1:
   version "1.1.1"

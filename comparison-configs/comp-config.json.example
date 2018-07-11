@@ -1,0 +1,38 @@
+{
+  "source": {
+    "adapterType": "mysql",
+    "connection": {
+      "institutionName": "Institution Name",
+      "institutionUrlName": "inu",
+      "databaseEnvironment": "stg",
+      "hostName": "localhost",
+      "databaseName": "inu_stg",
+      "userName": "root",
+      "password": "password",
+      "port": "3306"
+    }
+  },
+  "target": {
+    "adapterType": "mysql",
+    "connection": {
+      "institutionName": "Institution Name",
+      "institutionUrlName": "inu",
+      "databaseEnvironment": "stg",
+      "hostName": "localhost",
+      "databaseName": "inu_stg",
+      "userName": "root",
+      "password": "password",
+      "port": "3306"
+    }
+  },
+  "options": {
+    "schemaOptions": {
+      "excludeTables": ""
+    },
+    "dataOptions": {
+      "queries": [{
+        "query": "select concat(nmspc_cd, '.', cmpnt_cd, '.', parm_nm) as param_key from krcr_parm_t"
+      }]
+    }
+  }
+}
