@@ -5,20 +5,24 @@
   "license": "MIT",
   "scripts": {
     "generate-source-schema": "node get-source-schema.js",
-    "generate-data-config": "node get-source-data-config.js",
+    "generate-source-data-config": "node get-source-data-config.js",
     "diff-schemas": "node diff-schemas.js",
     "diff-data-configs": "node diff-data-config.js",
+    "diff-schema-and-configs": "node diff-schemas.js && node diff-data-config.js",
     "start": "node diff-schemas.js && node diff-data-config.js"
   },
   "dependencies": {
     "Console": "^1.1.0",
     "config": "^1.30.0",
+    "dateformat": "^3.0.3",
     "eslint": "^5.1.0",
     "fs": "^0.0.1-security",
     "knex": "^0.15.0",
     "linq": "^3.1.0",
+    "moment": "^2.22.2",
     "mongodb": "^3.1.1",
     "mysql": "^2.15.0",
-    "node-json-transform": "^1.0.16"
+    "node-json-transform": "^1.0.16",
+    "optimist": "^0.6.1"
   }
 }
