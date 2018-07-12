@@ -1,6 +1,7 @@
 node_modules
 output/comparisons/*
 output/schemas/*
+output/data-configs/*
 output/*.log
 comparison-configs/*.json
 local.js

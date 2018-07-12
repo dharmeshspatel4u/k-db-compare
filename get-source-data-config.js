@@ -7,21 +7,21 @@ const source = CompareConfigs.source
 const options = CompareConfigs.options
 
 const timestamp = Date.now()
-const schemaOutputFile = `./output/schemas/schema-${source.connection.institutionUrlName}-${timestamp}.json`
-const output = FileSystem.createWriteStream(schemaOutputFile);
+const dataOutputFile = `./output/data-configs/data-${source.connection.institutionUrlName}-${timestamp}.json`
+const output = FileSystem.createWriteStream(dataOutputFile);
 const errorOutput = FileSystem.createWriteStream('./output/stderr.log');
 
 const Logger = new Console(output, errorOutput);
 
-async function generateSchema(callback) {
+async function generateDataConfig(callback) {
 
-  let sourceSchema = await RdbmsCompare.getSchema(source, options)
-  Logger.log(JSON.stringify(sourceSchema, null, 2))
+  let sourceDataConfig = await RdbmsCompare.getDataConfig(source, options)
+  Logger.log(JSON.stringify(sourceDataConfig, null, 2))
 
-  callback(`Schema Generation Complete!`)
+  callback(`DataConfig Generation Complete!`)
 }
 
-generateSchema((results)=>{
+generateDataConfig((results)=>{
   console.log(results)
   process.exit(0)
 })

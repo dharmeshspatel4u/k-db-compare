@@ -5,8 +5,10 @@
   "license": "MIT",
   "scripts": {
     "generate-source-schema": "node get-source-schema.js",
+    "generate-data-config": "node get-source-data-config.js",
     "diff-schemas": "node diff-schemas.js",
-    "start": "node diff-schemas.js"
+    "diff-data-configs": "node diff-data-config.js",
+    "start": "node diff-schemas.js && node diff-data-config.js"
   },
   "dependencies": {
     "Console": "^1.1.0",
