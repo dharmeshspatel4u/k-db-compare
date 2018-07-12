@@ -39,17 +39,26 @@ Location of generated data config files: ./output/data-configs/
 
 ### Generate a comparison file with the results of diff'ing two schemas
 
-`npm run-script diff-schemas` - Generates source schema file when not provided
+To generate the source schema file to be used:
 
-`npm run-script diff-schemas -- --sourceSchemaFile=./output/schemas/schema-inu-1234.json` - Uses provided source schema
+`npm run-script diff-schemas`
+
+To provide the source schema file:
+
+`npm run-script diff-schemas -- --sourceSchemaFile=./output/schemas/schema-inu-20180711103001.json`
 
 Location of generated comparison files: ./output/comparisons/
 
 ### Generate a comparison file with the results of diff'ing two data configs
 
+To generate the source data config file to be used:
+
 `npm run-script diff-data-configs`
 
-`npm run-script diff-data-configs -- --sourceDataConfig=./output/schemas/schema-inu-1234.json` - Uses provided source data config
+To provided source data config:
+
+`npm run-script diff-data-configs -- --sourceDataConfig=./output/data-configs/data-inu-20180711103001.json`
+
 
 Location of generated comparison files: ./output/comparisons/
 
