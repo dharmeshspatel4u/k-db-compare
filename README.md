@@ -67,7 +67,7 @@ Location of generated comparison files: ./output/comparisons/
 `npm run-script diff-schema-and-configs`
 
 
-#### Configuration Options
+## Configuration Options
   You must configure a source connection to be used when generating schema and data config files. It's optional for comparisons if previously generated file is proveded.
 
   `source` - The master database to compare to
