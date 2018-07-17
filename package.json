@@ -9,6 +9,7 @@
     "diff-schemas": "node diff-schemas.js",
     "diff-data-configs": "node diff-data-config.js",
     "diff-schema-and-configs": "node diff-schemas.js && node diff-data-config.js",
+    "validate-integrity": "node validate-integrity.js",
     "start": "node diff-schemas.js && node diff-data-config.js"
   },
   "dependencies": {
